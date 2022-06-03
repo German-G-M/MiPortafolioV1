@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--integramos el css de  bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--integramos fontawesome (en google buscamos: "font awesome cdn" y copiamos el primer link)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--integramos google fonts (tener en cuenta las tipografias y sus variantes: Oswald y opensans para nuestro proyecto)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600&family=Oswald:wght@200;400;600;700&family=Raleway:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!--integramos nuestro propio archivo css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Mi portafolio v1</title>
+</head>
+
+<body>
+    <!--"navbar-dark" para que las letras del navbar sean blancas -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">GermanGM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--"text-end" para llevar las opciones al lado derecho-->
+            <div class="collapse navbar-collapse text-end" id="navbarSupportedContent">
+                <!--cambiamos "me" (margin end) por "ms" (margin start) para llevar las opciones al lado derecho-->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#sobre_mi">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trabajos">Trabajos</a>
+                    </li>
+                    <!-- 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Trabajos
+                        </a>
+                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#trabajos">FrontEnd</a></li>
+                            <li><a class="dropdown-item" href="#trabajos">BackEnd</a></li>
+                            <li><a class="dropdown-item" href="#trabajos">Express</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#trabajos">Otros</a></li>
+                        </ul>
+                    </li>
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <!--
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="&#xf002"
+                        style="font-family: Arrial, FontAwesome;" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+                -->
+            </div>
+        </div>
+    </nav>
+
+    <!--header para l "hero-section"-->
+    <header id="hero_section">
+        <div class="container text-center text-white">
+            <h1>GERMAN GUTIERREZ MACHICADO</h1>
+            <hr class="hero_line mx-auto opacity-100">
+            <!--"<hr>" es para barras divisoras horizontales-->
+            <h1>DESARROLLADOR FULL STACK JAVA SCRIPT</h1>
+        </div>
+    </header>
+
+    <!--"d-non"= display none (hace que no se muestre en ningún tamaño)-->
+    <!--"d-sm-block"= display small block (hace que se muestre en bloque desde small en adelante)-->
+    <section id="sobre_mi" class="pt-5 container d-none d-sm-block">
+        <div class="my-5">
+            <!--"fw-bold"=font weight bold-->
+            <h4 class="text-center fw-bold">
+                Soy una persona comprometida, confiable, entusiasta, proactiva y listo a afrontar nuevos desafíos.
+            </h4>
+            <hr class="opacity-100 w-25 mx-auto">
+            <!--la linea divisoria-->
+        </div>
+        
+
+        <!--este div tendrá el rol de una fila-->
+        <div class="row pt-3">
+            <!--hacemos 2 "div" de "col-6" para hacer 2 columnas-->
+            <div class="col-6">
+                <p class="text-center">
+
+                    <b class="fw-bolder" style="color: rgb(132, 8, 8);">EXPERIENCIA PROFESIONAL</b>
+                    <br>
+                    DESARROLLADOR FULL STACK JAVA SCRIPT FREELANCE <br>
+                    <i>Mayo 2022 – Actualmente</i>
+                    <br>
+                    TRADUCTOR TÉCNICO INGLÉS-ESPAÑOL FREELANCE <br>
+                    <i>Abril 2020 – Actualmente</i>
+                    <br>
+                    PROFESOR PARTICULAR DE INGLÉS | 
+                    TUSCLASESPARTICULARES.CL<br>
+                    <i>Mayo 2020 – Actualmente</i>
+                    <br>
+                    PROFESOR PARTICULAR DE INGLÉS | 
+                    SUPERPROF.CL<br>
+                    <i>Mayo 2020 – Actualmente</i>
+                    <br>
+                    TRADUCTOR INGLÉS-ESPAÑOL |
+                    G&S INTERPRETACIONES Y TRADUCCIONES <br>
+                    <i>Octubre 2019 – Abril 2020</i>
+
+
+                </p>
+            </div>
+            <div class="col-6">
+                <p class="text-center">
+                    <b class="fw-bolder" style="color: rgb(132, 8, 8);">FORMACIÓN ACADÉMICA</b>
+                    <br>
+                    Desarrollo de Aplicaciones Full Stack Java Script | Desafío LATAM – SENCE <br>
+                    <i>Diciembre 2021 – Mayo 2022</i>
+                    <br>
+                    Business English (4 Specialization Courses) | Arizona State University (USA) <br>
+                    <i>Agosto 2020 – Diciembre 2020</i>
+                    <br>
+                    Financial Translation | Traducción Financiera Udemy <br>
+                    <i>Junio 2020 – Octubre 2020</i>
+                    <br>
+                    Data Wise: A Collaborative Process to Improve Learning and Teaching |
+                    Harvard University (USA) <br>
+                    <i>Abril 2020 – Julio 2020</i>
+                    <br>
+                    Certificate of Competency in English |
+                    The University of Michigan  (USA)<br>
+                    <i>2014</i>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-5 container text-center">
+        <div>
+            <h1 class="fw-bold text-uppercase">Software</h1>
+            <hr class="opacity-100 mx-auto w-25">
+        </div>
+        <div class="row pt-5">
+            <!--aqui ponemos los iconos de nuestros trabajos-->
+            <!--"col-12"=para todo (se mostrara un elemento en toda la pantalla para la vista en telefonos)-->
+            <!--"col-sm-6"=para todo después de small (se mostraran 2 elementos en toda la pantalla para la vista de small en adelante)-->
+            <!--"col-lg-3"=para todo después de lg (se mostraran 4 elementos en toda la pantalla para la vista de large en adelante)-->
+
+            <article class="col-12 col-sm-6 col-lg-3 p-2">
+                <!--añadimos "tool-tips" al icono de font-awesome (data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top")-->
+                <i class="fa-brands fa-node-js fa-5x" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hola Amigo"></i>
+                <h4 class="fw-bold mt-3">Node JS</h4>
+                <h4>2021-2022</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 p-2">
+                <i class="fa-brands fa-laravel fa-5x" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hola Amigo"></i>
+                <h4 class="fw-bold mt-3">Larabel</h4>
+                <h4>2021-2022</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 p-2">
+                <i class="fa-solid fa-database fa-5x" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hola Amigo"></i>
+                <h4 class="fw-bold mt-3">Data Base</h4>
+                <h4>2021-2022</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 p-2">
+                <i class="fa-brands fa-js fa-5x" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hola Amigo"></i>
+                <h4 class="fw-bold mt-3">JavaScript</h4>
+                <h4>2021-2022</h4>
+            </article>
+
+        </div>
+
+        <div class="row pt-5">
+            <!--aqui ponemos los iconos de nuestros trabajos-->
+            <!--"col-12"=para todo (se mostrara un elemento en toda la pantalla para la vista en telefonos)-->
+            <!--"col-sm-6"=para todo después de small (se mostraran 2 elementos en toda la pantalla para la vista de small en adelante)-->
+            <!--"col-lg-3"=para todo después de lg (se mostraran 4 elementos en toda la pantalla para la vista de large en adelante)-->
+
+            <article class="col-12 col-sm-6 col-lg-3 p-2">
+                <i class="fa-brands fa-github fa-5x" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hola Amigo"></i>
+                <h4 class="fw-bold mt-3">GitHub</h4>
+                <h4>2021-2022</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 p-2">
+                <i class="fa-brands fa-r-project fa-5x" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hola Amigo"></i>
+                <h4 class="fw-bold mt-3">R</h4>
+                <h4>2021-2022</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 p-2">
+                <i class="fa-brands fa-php fa-5x" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hola Amigo"></i>
+                <h4 class="fw-bold mt-3">PHP</h4>
+                <h4>2021-2022</h4>
+            </article>
+            <article class="col-12 col-sm-6 col-lg-3 p-2">
+                <i class="fa-brands fa-html5 fa-5x" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Hola Amigo"></i>
+                <h4 class="fw-bold mt-3">Html-5</h4>
+                <h4>2021-2022</h4>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section id="trabajos" class="py-5">
+        <!--"div" que contendrá el titulo y la barra divisora-->
+        <div>
+            <h1 class="fw-bold text-center text-uppercase mt-2 text-white">Mis últimos trabajos</h1>
+            <hr class="opacity-100 bg-white mx-auto w-25">
+        </div>
+
+        <!--dentro del container estarán las tarjetas de videos-->
+        <div class="container">
+            <div class="row">
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v12" width="100%" height="315" src="..." title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> Skate Park</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Tecnología, herramientas y/o temas ocupados:</spam><br>
+                                Express,
+                                Handlebars,
+                                PostgreSQL,
+                                JWT,
+                                Express-fileupload
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v11" width="100%" height="315" src="..." title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title">Mercado Web</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Tecnología, herramientas y/o temas ocupados:</spam><br>
+                                Integrando jQuery y Bootstrap,
+                                Handlebars y los motores de plantilla
+                                Parciales,
+                                Helpers,
+                                Devolviendo un sitio web de contenido dinámico
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v10" width="100%" height="315" src="..." title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> Elecciones</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Características:</spam><br>
+                                Registro de un nuevo candidato,
+                                Obtención de los datos de todos los candidatos registrados,
+                                Eliminación de un candidato,
+                                Edición de la información de un candidato,
+                                Inserción de un nuevo registro en un historial de votos,
+                                Devolución de todo el historial de votos
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v9" width="100%" height="315" src="..." title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> Mi Repertorio</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Características:</spam><br>
+                                Levantando un servidor con conexión a PostgreSQL,
+                                Insertando registros,
+                                Consultado registros,
+                                Actualizando registros,
+                                Eliminando registros
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v8" width="100%" height="315" src="..." title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> Quién Ganará</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Características:</spam><br>
+                                Almacenar usuarios nuevos,
+                                Devolver todos los usuarios,
+                                Devolver la información del premio,
+                                Modificar la información del premio,
+                                Generar y devolver al ganador,
+                                Enviar un correo electrónico masivo a todos los participantes anunciando quién fue el
+                                ganador
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v7" width="100%" height="315" src="..." title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> Club Deportivo</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Tecnología, herramientas y/o temas ocupados:</spam><br>
+                                Persistencia,
+                                Servidores y persistencia,
+                                Persistiendo datos de una API.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v6" width="100%" height="315" src="..." title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> Room Mates</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Tecnología, herramientas y/o temas ocupados:</spam><br>
+                                Manipulación de archivos con File System,
+                                Manejo de errores,
+                                Construcción de una API RESTful,
+                                Manejo de códigos de estado HTTP,
+                                Uso paquetes de npm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v5" width="100%" height="315" src="..." title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> COVID 19</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Tecnología, herramientas y/o temas ocupados:</spam><br>
+                                Barra de navegación,
+                                levantar un modal,
+                                implementar JWT,
+                                desplegar gráfico,
+                                funcionalidades del sitio web,
+                                Estructura del proyecto,
+                                consumo de API,
+                                desplegar gráfico y tabla,
+                                Uso de modal,
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v4" width="100%" height="315" src="..." title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> Animales Salvajes</div>
+                            <p class="card-text fw-light">
+                                <spam class="text-danger">Características:</spam><br>
+                                Crear clases con herencias,
+                                Exportar e importar módulos,
+                                Crear funciones autoejecutables IIF,
+                                Crear funciones async / await,
+                                Crear instancias de clases,
+                                Obtener y modificar elementos del DOM.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v3" width="100%" height="315" src="..." title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title">Realidad Aumentada</div>
+                            <p class="card-text fw-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eligendi fuga vitae enim
+                                fugiat alias, est beatae nostrum natus. Officia magni numquam, quisquam vero
+                                necessitatibus tempore ipsa autem quia eum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <iframe id="v2" width="100%" height="315" src="..." title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title">Corto Animado -juego Qui-Run</div>
+                            <p class="card-text fw-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eligendi fuga vitae enim
+                                fugiat alias, est beatae nostrum natus. Officia magni numquam, quisquam vero
+                                necessitatibus tempore ipsa autem quia eum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--"col-sm-4"= (depués de small irán 3 tarjetas)-->
+                <div class="col-12 col-sm-4 my-3">
+                    <!--le añadimos un modal a cada tarjeta (data-bs-toggle="modal" data-bs-target="#exampleModal")-->
+                    <div class="card border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <!--aqui ponemos el enlace del juego-->
+                        <iframe id="v1" width="100%" height="315" src="http://quirun.online/"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <!--<img src="./assets/img/imgg.jpg" alt="" class="card-img-top">-->
+                        <div class="card-body" style="height: 11rem;">
+                            <div class="card-title"> <a href="http://quirun.online/" target="_blank">Haga clik aqui para
+                                    JUGAR</a> </div>
+                            <p class="card-text fw-light">
+                                Porl el momento solo se puede jugar en una computadora de escritorio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container text-center py-5">
+        <div class="mb-5">
+            <h1 class="fw-bold text-uppercase">Contacto</h1>
+            <hr class="opacity-100 mx-auto w-25">
+        </div>
+        <div>
+            <p>
+                ¿Quiéres conocer más de mi?
+            </p>
+            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contactoModal">Comenzar</button>
+        </div>
+    </section>
+
+    <footer id="footer" class="text-center text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h1 class="fw-bold text-uppercase">GermanGM</h1>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <a href="https://github.com/German-G-M" target="_blank"> <i
+                            class="fa-brands fa-github fa-3x mx-2"></i></a>
+                    <a href="https://linkedin.com/in/germán-gutiérrez-a86bb21b1" target="_blank"><i
+                            class="fa-brands fa-linkedin-in fa-3x mx-2"></i></a>
+                    <a><i class="fa-brands fa-twitter fa-3x mx-2"></i></a>
+                    <a><i class="fa-brands fa-facebook fa-3x mx-2"></i></a>
+                    <a><i class="fa-brands fa-instagram fa-3x mx-2"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--los modales van debajo del "footer" y antes de los "scripts"-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">titulo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para el contacto -->
+    <div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Información de Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <b>Celular:</b> <br>
+                    + 56 958965804 +56 983898330 <br>
+                    <hr>
+                    <b>E-mail:</b> <br>
+                    germangutierrez.ggm@gmail.com <br>
+                    <hr>
+                    <b>Youtube:</b> <br>
+                    <a href="https://www.youtube.com/channel/UCaPt8dgDbXrkEeVAl0Bu6aQ"
+                        target="_blank">https://www.youtube.com/channel/UCaPt8dgDbXrkEeVAl0Bu6aQ</a>
+                    <br>
+                    <hr>
+                    <b>GitHub:</b> <br>
+                    <a href="https://github.com/German-G-M" target="_blank">https://github.com/German-G-M</a>
+                    <br>
+                    <hr>
+                    <b>linkedin:</b> <br>
+                    <a href="https://linkedin.com/in/germán-gutiérrez-a86bb21b1"
+                        target="_blank">https://linkedin.com/in/germán-gutiérrez-a86bb21b1</a>
+                    <br>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--integramos el js de Bootstrap (al final)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!--nuestros scripts deben estar al ultimo-->
+    <!--integramos jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--integro mi propio script-->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/scriptVideos.js"></script>
+</body>
+
+</html>

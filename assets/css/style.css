@@ -1,0 +1,117 @@
+html{
+    /*bootstrap trae por defecto el "scroll-behavior:smoth"*/
+    /*para eliminarlo hacemos lo siguiente*/
+    scroll-behavior: auto !important;
+    /*ahora creamos nuestra propia animación de "smoth scroll" (esto lo hacemos en eun archivo ".js"*/
+}
+/* estilos del navbar*/
+body{
+    font-family: Helvetica, sans-serif;
+}
+.navbar{
+    /*height: 60px !important;*/
+    background-color: brown !important;
+    position: fixed; /*para fijar el menú de navegación*/
+    width: 100vw;/*recuperamos la anchura maxima con "100vw" (vw=view width)*/
+    z-index: 1; /*para que se sobreponga sobre cualquier elemento (que esté por encima del HERO SECTION)*/
+}
+
+.navbar-brand{/*personalizamos el nombre*/
+    font-family: "oswald"; /*tipografía*/
+    font-size: 30px; /*tamaño de fuente*/
+    font-weight: 700; /*peso de la fuente*/
+}
+
+/*El header (hero_section)*/
+#hero_section{
+    background-image: url("../img/imgg.jpg");
+    background-repeat: no-repeat;/*para que no se repita ala imagen si hay más espacio*/
+    background-size: cover;/* para que se autoajuste al espacio o la dimensión*/
+    background-position: center;/*para que la imagen esté siempre al centro*/
+    height: 100vh;/*para la altura "100vh" (vh=view height)*/
+    position: relative; /*todo el "hero_section" será nuestra posición relativa*/
+                        /*esto para ubicar los elemntos que queramos dentro de esta position relativa*/
+}
+
+#hero_section div{
+
+    position: absolute;
+    bottom: 85px; /*para ubicar el div de abajo hacia arriba 45 pixeles*/
+    /*para centrarlo, ocupamos estas 3 propiedades:*/
+    left: 0; 
+    right: 0;
+    margin: auto;
+}
+.hero_line{ /*reducimos el tamaño de la linea divisoria*/
+    width: 500px;
+}
+#hero_section h1{ /*personalizamos la fuente*/
+    /*background-color: black;
+    opacity: 70%;*/
+    font-family: "oswald";
+    font-size: 52px;
+}
+
+/*definimos la diferencia de los pesos de fuente con pseudoclases*/
+#hero_section h1:first-child{ /*personalizamos el primer "h1" con la pseudoclase "fisrs-chid"*/
+    font-weight: 200;
+}
+#hero_section h1:last-child{ /*personalizamos el primer "h1" con la pseudoclase "last-chid"*/
+    font-weight: 900;
+}
+
+/*sobre_mi*/
+#sobre_mi{
+    color: rgb(103, 91, 91); /*bajamos un poco el tono negro de la letra*/
+    font-family: "Open sans";
+    line-height: 3;/*el interlineado*/
+
+}
+
+/*mi_experiencia*/
+#experiencia div h1{
+    font-family: "oswald";
+    font-size: 42px;
+}
+#experiencia i{
+    color: brown;
+}
+#experiencia div:nth-child(n+1) article h4:first-of-type{ /*me Funcionó con "first-of-tipe"*/
+    font-family: "oswald";
+    background-color:rgb(16, 7, 97);
+    color:white;
+    font-weight: 900 ;
+    width: 150px;
+    margin: auto;
+}
+#experiencia div:nth-child(n+1) article h4:last-child{ /*modifica desde el segundo elemento en adelante "n+1"*/
+    font-family: "Open sans";
+    font-weight: 300;
+}
+
+/*mis últimos trabajos*/
+#trabajos{
+    background-color: brown;
+    font-family: "oswald";
+}
+#trabajos h1{
+    font-size: 42px;
+}
+
+/*contactos*/
+#contacto h1{
+    font-family: "oswald";
+    font-size: 42px;
+}
+
+/*footer*/
+
+footer{
+    background-color: brown;
+}
+footer h1{
+    font-family: "oswald";
+}
+footer a{
+    color: white;
+}
