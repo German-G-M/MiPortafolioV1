@@ -3,10 +3,14 @@ html{
     /*para eliminarlo hacemos lo siguiente*/
     scroll-behavior: auto !important;
     /*ahora creamos nuestra propia animación de "smoth scroll" (esto lo hacemos en eun archivo ".js"*/
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
 }
 /* estilos del navbar*/
 body{
     font-family: Helvetica, sans-serif;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
 }
 .navbar{
     /*height: 60px !important;*/
