@@ -480,12 +480,20 @@
                 <div class="col-12 col-sm-6 col-lg-4 my-3">
                     <div class="card border-0">
                         <!--aqui ponemos el enlace del juego-->
-                        <iframe id="v1" width="100%" height="315" src="http://quirun.online/"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <!--<img src="./assets/img/imgg.jpg" alt="" class="card-img-top">-->
+                        <!--el iframe no acepta "http" solo "https"-->
+                            <!--para arreglar este problema googgle como servidor proxi"-->
+                            <!--src="https://www.google.ie/gwt/x?u=http://quirun.online/"-->
+                            <!--no funcionó. en su lugar solo pondré una imagen-->
+                            <!--en el servidor local si funciona funciona con llamada directa de iframe -->
+
+                         <!--
+                             <iframe id="v1" width="100%" height="315" src="https://www.google.com/search?q=%http://quirun.online&btnI=Im+Feeling+Lucky"
+                             title="YouTube video player" frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen>
+                            </iframe>
+                        -->   
+                        <img src="./assets/img/img_pagina_quirun.jpeg" width="100%" height="315" alt="qui-run" class="card-img-top">
                         <div class="card-body" style="height: 11rem;">
                             <div class="card-title"> <a href="http://quirun.online/" target="_blank">Haga clik aqui para
                                     JUGAR</a> </div>
